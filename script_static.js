@@ -68,7 +68,7 @@ async function main() {
         if (songs.length === 0) return;
 
         currentIndex = (currentIndex + 1) % songs.length;
-        player.src = songs[currentIndex].url;
+       player.src = encodeURI(songs[currentIndex].url);
         player.play();
         pausebutton.style.display = "block";
         playbutton.style.display = "none";
@@ -79,7 +79,7 @@ async function main() {
         if (songs.length === 0) return;
 
         currentIndex = (currentIndex - 1 + songs.length) % songs.length;
-        player.src = songs[currentIndex].url;
+       player.src = encodeURI(songs[currentIndex].url);
         player.play();
         pausebutton.style.display = "block";
         playbutton.style.display = "none";
