@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <audio id="player" style="display: none" controls></audio>
+
+    <div class="header text flex">
+        <div class="menuicon">
+    &#9776;
+</div>
+
+        <div class="logo">
+            <a href="."><img src="logo.svg" alt="logo" height="40px" width="30px"></a>
+        </div>
+
+        <div class="home">
+            <a href="."><img src="home.svg" alt="home" height="40px" width="25px"></a>
+        </div>
+
+        <div class="search" onclick="searchonclick()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="40" data-encore-id="icon" role="img"
+                aria-hidden="true" class="e-9960-icon e-9960-baseline M9l40ptEBXPm03dU3X1k" data-testid="search-icon"
+                viewBox="0 0 24 24"
+                style="--encore-icon-height: var(--encore-graphic-size-decorative-larger-3); --encore-icon-width: var(--encore-graphic-size-decorative-larger-3);">
+                <path
+                    d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z">
+                </path>
+            </svg>
+            <input placeholder="What do you want to play?">
+        </div>
+
+        <div class="psd">
+            <div class="premium">
+                <a href=".">
+                    <h4>Premium</h4>
+                </a>
+            </div>
+            <div class="support">
+                <a href=".">
+                    <h4>Support</h4>
+                </a>
+            </div>
+            <div class="download">
+                <a href=".">
+                    <h4>Download</h4>
+                </a>
+            </div>
+            <div class="bar">
+                <h1>|</h1>
+            </div>
+            <div class="install flex ">
+                <a class="i flex" href=".">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="25" data-encore-id="icon" role="img"
+                        aria-hidden="true" class="e-9960-icon e-9960-baseline" viewBox="0 0 16 16"
+                        style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);">
+                        <path
+                            d="M4.995 8.745a.75.75 0 0 1 1.06 0L7.25 9.939V4a.75.75 0 0 1 1.5 0v5.94l1.195-1.195a.75.75 0 1 1 1.06 1.06L8 12.811l-.528-.528-.005-.005-2.472-2.473a.75.75 0 0 1 0-1.06">
+                        </path>
+                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13"></path>
+                    </svg>
+                    <h4>Install App</h4>
+                </a>
+
+                <a class="s" href=".">
+                    <h4>Sign up</h4>
+                </a>
+                <button class="login">Log in</button>
+            </div>
+        </div>
+    </div>
+    <div class="grid text ">
+        <div class="sidebar">
+            <div class="library flex">
+                <p>Your Library</p>
+                <a href=".">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="25" data-encore-id="icon" role="img"
+                        aria-hidden="true" class="e-9960-icon e-9960-baseline" viewBox="0 0 16 16"
+                        style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);">
+                        <path
+                            d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75">
+                        </path>
+                    </svg></a>
+            </div>
+            <div class="create">
+                <h4>Create your first playlist</h4>
+                <p>It's easy, we'll help you</p>
+                <button>create playlist</button>
+            </div>
+            <div class="create create2">
+                <h4>Let's find some podcasts to follow</h4>
+                <p>We'll keep you updated on new episodes</p>
+                <button>Browse podcasts</button>
+            </div>
+            <div class="legal flex">
+                <a href=".">Legal</a>
+                <a href=".">Safety & PrivacyCenter</a>
+                <a href=".">Privacy Policy</a>
+                <a href=".">Cookies</a>
+            </div>
+            <div class="legal flex">
+                <a href=".">About Ads</a>
+                <a href=".">Accessibility</a>
+            </div>
+            <div class="legal legal2 flex" style="margin-bottom: 30px;">
+                <a href="." style="color:white">Cookies</a>
+            </div>
+            <button class=" lang flex">
+                <img src="lang.svg">
+                <p style="color: white; font-weight: bold;">English</p>
+            </button>
+
+        </div>
+        <div class="main">
+            <h2 class="transparent" style="margin-bottom: 5px;">Trending songs</h2>
+            <div class="cardcontainer transparent"> 
+            </div>
+
+            <div class="playbar">
+
+<div class="volume transparent flex" >
+    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.0012 8.99984H9.1C8.53995 8.99984 8.25992 8.99984 8.04601 9.10883C7.85785 9.20471 7.70487 9.35769 7.60899 9.54585C7.5 9.75976 7.5 10.0398 7.5 10.5998V13.3998C7.5 13.9599 7.5 14.2399 7.60899 14.4538C7.70487 14.642 7.85785 14.795 8.04601 14.8908C8.25992 14.9998 8.53995 14.9998 9.1 14.9998H10.0012C10.5521 14.9998 10.8276 14.9998 11.0829 15.0685C11.309 15.1294 11.5228 15.2295 11.7143 15.3643C11.9305 15.5164 12.1068 15.728 12.4595 16.1512L15.0854 19.3023C15.5211 19.8252 15.739 20.0866 15.9292 20.1138C16.094 20.1373 16.2597 20.0774 16.3712 19.9538C16.5 19.811 16.5 19.4708 16.5 18.7902V5.20948C16.5 4.52892 16.5 4.18864 16.3712 4.04592C16.2597 3.92233 16.094 3.86234 15.9292 3.8859C15.7389 3.9131 15.5211 4.17451 15.0854 4.69733L12.4595 7.84843C12.1068 8.27166 11.9305 8.48328 11.7143 8.63542C11.5228 8.77021 11.309 8.87032 11.0829 8.93116C10.8276 8.99984 10.5521 8.99984 10.0012 8.99984Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+    <input type="range" id="timelinevolume" min="0" max="100" value="100">
+
+</div>
+
+
+                    <div class="songsbutton flex transparent">
+<svg class="previous" width="25px" height="25px" fill="gray" viewBox="0 0 32 32" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Icon"> <path d="M9.441,13.504c-0.834,0.556 -1.335,1.493 -1.335,2.496c-0,1.003 0.501,1.94 1.335,2.496l13.895,9.263c0.92,0.614 2.104,0.671 3.08,0.149c0.975,-0.522 1.584,-1.539 1.584,-2.645l-0,-18.526c-0,-1.106 -0.609,-2.123 -1.584,-2.645c-0.976,-0.522 -2.16,-0.465 -3.08,0.149l-13.895,9.263Zm1.11,1.664l13.894,-9.263c0.307,-0.205 0.702,-0.224 1.027,-0.05c0.325,0.174 0.528,0.513 0.528,0.882c-0,0 -0,18.526 -0,18.526c-0,0.369 -0.203,0.708 -0.528,0.882c-0.325,0.174 -0.72,0.155 -1.027,-0.05c0,0 -13.894,-9.263 -13.894,-9.263c-0.278,-0.185 -0.445,-0.498 -0.445,-0.832c-0,-0.334 0.167,-0.647 0.445,-0.832Z"></path> <path d="M3.977,4.987l-0.003,22c0,0.552 0.448,1.001 1,1.001c0.552,-0 1,-0.448 1,-1l0.003,-22c0.001,-0.552 -0.447,-1 -0.999,-1c-0.552,-0 -1,0.448 -1.001,0.999Z"></path> </g> </g></svg>
+
+
+                    <svg class="play" width="25px" height="25px" viewBox="-0.5 0 7 7" style=" padding:5px;border-radius:50%;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <g id="Page-1" stroke="none" stroke-width="1" fill="black" fill-rule="evenodd">
+        <g id="Dribbble-Light-Preview" transform="translate(-347.000000, -3766.000000)" fill="#000000">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M296.494737,3608.57322 L292.500752,3606.14219 C291.83208,3605.73542 291,3606.25002 291,3607.06891 L291,3611.93095 C291,3612.7509 291.83208,3613.26444 292.500752,3612.85767 L296.494737,3610.42771 C297.168421,3610.01774 297.168421,3608.98319 296.494737,3608.57322" id="play-[#1003]">
+
+</path>
+            </g>
+        </g>
+    </g>
+</svg>
+
+<svg class="pause" width="25px" height="25px" viewBox="-0.5 0 7 7" style=" padding:5px; border-radius:50%;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="black" fill-rule="evenodd">
+        <g id="Dribbble-Light-Preview" transform="translate(-347.000000, -3766.000000)" fill="#000000">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+                <!-- Left pause bar -->
+                <rect x="293" y="3606" width="1" height="7" rx="0.5"></rect>
+                <!-- Right pause bar with gap -->
+                <rect x="295" y="3606" width="1" height="7" rx="0.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
+
+
+<svg class="next" width="25px" height="25px" fill="gray" viewBox="0 0 32 32" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+  <g id="SVGRepo_iconCarrier">
+    <g id="Icon">
+      <path d="M22.559,13.504c0.834,0.556 1.335,1.493 1.335,2.496c0,1.003 -0.501,1.94 -1.335,2.496l-13.895,9.263c-0.92,0.614 -2.104,0.671 -3.08,0.149c-0.975,-0.522 -1.584,-1.539 -1.584,-2.645l0,-18.526c0,-1.106 0.609,-2.123 1.584,-2.645c0.976,-0.522 2.16,-0.465 3.08,0.149l13.895,9.263Zm-1.11,1.664l-13.894,-9.263c-0.307,-0.205 -0.702,-0.224 -1.027,-0.05c-0.325,0.174 -0.528,0.513 -0.528,0.882c0,0 0,18.526 0,18.526c0,0.369 0.203,0.708 0.528,0.882c0.325,0.174 0.72,0.155 1.027,-0.05c0,0 13.894,-9.263 13.894,-9.263c0.278,-0.185 0.445,-0.498 0.445,-0.832c0,-0.334 -0.167,-0.647 -0.445,-0.832Z"></path>
+      <path d="M28.023,4.987l0.003,22c0,0.552 -0.448,1.001 -1,1.001c-0.552,-0 -1,-0.448 -1,-1l-0.003,-22c-0.001,-0.552 0.447,-1 0.999,-1c0.552,-0 1,0.448 1.001,0.999Z"></path>
+    </g>
+  </g>
+</svg>
+                    </div>
+<div class="timelinecontainer transparent">
+    <input type="range" id="timeline" min="0" max="100" value="0">
+</div>
+
+
+<div class="songname transparent">
+    <p class="song transparent">(song name)</p>
+<div class="songtime flex transparent">
+    <p class="currenttime transparent">00:00</p>
+    <p class="slash transparent">/</p>
+    <p class="totaltime transparent">00:00</p>
+</div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script_static.js"></script>
+</body>
+
+</html>
