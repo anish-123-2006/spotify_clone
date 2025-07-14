@@ -42,7 +42,7 @@ async function main() {
 
         card.addEventListener("click", () => {
             currentIndex = index;
-            player.src = song.url;
+            player.src = encodeURI(song.url);
             player.play();
             pausebutton.style.display = "block";
             playbutton.style.display = "none";
